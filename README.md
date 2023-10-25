@@ -1,5 +1,5 @@
 # PythonIntro008
- we will about python
+ we will learn  about python
  | Class Num |  Title  | Link  |  
 |---|---|---|
 | 1  |  Intro | [Click here!](./classes/class1.md)| 
