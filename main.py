@@ -17,4 +17,13 @@ for i in range(0,20,1):
     print(i)    
 for i in Student:
     print(i,":",Student[i])
-    #print dictionary for title, contant, welcome
+#----------------------------------------------
+Number=input('Please insert int value:')
+Number=(int(Number))
+if Number%2==0:
+        print('This number is even')
+else:
+        print('This number is odd')
+
+
+#print dictionary for title, contant, welcome
