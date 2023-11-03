@@ -25,5 +25,51 @@ if Number%2==0:
 else:
         print('This number is odd')
 
+i=0
+whiletest=True
+while whiletest:
+    
+    if i==5:
+        i+=1
+        continue
+    print(i)
+    i+=1
+    if i==10:
+         break
 
 #print dictionary for title, contant, welcome
+allperson=[]
+person={}
+print('Welcome to the app') 
+while True:
+     print("1 to insert new person")
+     print("2_to see all person")
+     print("3_tp Exit")
+
+     choice=input("please insert yoou choice")
+     if choice=='1':
+          name=input('insert the person name')
+          age=int(input('insert the person age'))
+          job=input('insert the person job')
+          person['name']=name
+          person['age']=age
+          person['job']=job
+          allperson.append(person)
+          print("You add all person successfully")
+       
+     elif choice=='2':
+         counter=1
+         print('----'*20)
+         print('all person :')
+         for i in allperson:
+              print('person',counter)
+         for key in i:     
+              print("---",key,i[key])
+              counter+=1
+              
+
+     
+     
+           
+
+          
