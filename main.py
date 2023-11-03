@@ -50,7 +50,11 @@ while True:
      if choice=='1':
           name=input('insert the person name')
           age=int(input('insert the person age'))
-         
+          try: 
+                  person['age']=age
+          except ValueError as e :
+                  
+                  print('You insert a WrongValue key')
           job=input('insert the person job')
           person['name']=name
           
