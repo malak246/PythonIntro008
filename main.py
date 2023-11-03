@@ -50,9 +50,11 @@ while True:
      if choice=='1':
           name=input('insert the person name')
           age=int(input('insert the person age'))
+         
           job=input('insert the person job')
           person['name']=name
-          person['age']=age
+          
+          
           person['job']=job
           allperson.append(person)
           print("You add all person successfully")
