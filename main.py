@@ -41,46 +41,70 @@ while whiletest:
 allperson=[]
 person={}
 print('Welcome to the app') 
-# while True:
-#      print("1 to insert new person")
-#      print("2_to see all person")
-#      print("3_tp Exit")
-#      choice=input("please insert yoou choice")
-#      if choice=='1':
-#           name=input('insert the person name')
-#           age=int(input('insert the person age'))
-#           try: 
-#                   person['age']=age
-#           except ValueError as e :
-                  
-#                   print('You insert a WrongValue key')
-#           job=input('insert the person job')
-#           person['name']=name
-          
-          
-#           person['job']=job
-#           allperson.append(person)
-#           print("You add all person successfully")
+x=0
+while True:
+     print("1 to insert new person")
+     print("2_to see all person")
+     print("3_tp Exit")   
+
+     choice=input("please insert your choice ")
+     if choice=='1':
        
-#      elif choice=='2':
-#          counter=1
-#          print('----'*20)
-#          print('all person :')
-#          for i in allperson:
-#               print('person',counter)
-#          for key in i:     
-#               print("---",key,i[key])
-#               counter+=1
-              
-list=[1,2,3,4,5,6,5,7,8,9]
-list.pop(5)
-print(list)
-list.reverse()
-print(list)
-list.remove(5)
-print(list)
-list.count(1)
-print(list.count(6))
+   
+          name=input('insert the person name: ')
+          try: 
+                  age=int(input('insert the person age: '))
+
+          except ValueError as e :
+                  
+                  print('You insert a WrongValue key')
+          job=input('insert the person job: ')
+          password=input('Insert the password:')
+          skill=input('Insert new skill: ')
+          person={
+               'name':name,
+               'age':age,
+               'job':job,
+               'password':password,
+               'skill':skill
+          }
+          allperson.append(person)
+          print("You add all person successfully")
+       
+     elif choice=='2':
+         counter=1
+         print('----'*20)
+         print('all person :')
+         for i in allperson:
+              print('person',counter)
+         for key in i:     
+              print("---",key,i[key])
+              counter+=1
+         print('----'*20)     
+         print('Please insert your name and password:')
+         name=input('Please enter your name:')
+         password=input('Please enter your password:')
+         if i['name']==name and i['password']== password:
+              print('Welcome to your account',name)
+              break
+
+     elif choice=='3':
+          print('Thank you for using our app')
+          break
+     elif choice=='4':
+          print(allperson)
+     else:
+        print('Wrong choice!')          
+         
+# # list=[1,2,3,4,5,6,5,7,8,9]
+# # list.pop(5)
+# # print(list)
+# # list.reverse()
+# # print(list)
+# # list.remove(5)
+# # print(list)
+# # list.count(1)
+# # print(list.count(6))
 
 
 
