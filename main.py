@@ -41,38 +41,49 @@ while whiletest:
 allperson=[]
 person={}
 print('Welcome to the app') 
-while True:
-     print("1 to insert new person")
-     print("2_to see all person")
-     print("3_tp Exit")
-
-     choice=input("please insert yoou choice")
-     if choice=='1':
-          name=input('insert the person name')
-          age=int(input('insert the person age'))
-          try: 
-                  person['age']=age
-          except ValueError as e :
+# while True:
+#      print("1 to insert new person")
+#      print("2_to see all person")
+#      print("3_tp Exit")
+#      choice=input("please insert yoou choice")
+#      if choice=='1':
+#           name=input('insert the person name')
+#           age=int(input('insert the person age'))
+#           try: 
+#                   person['age']=age
+#           except ValueError as e :
                   
-                  print('You insert a WrongValue key')
-          job=input('insert the person job')
-          person['name']=name
+#                   print('You insert a WrongValue key')
+#           job=input('insert the person job')
+#           person['name']=name
           
           
-          person['job']=job
-          allperson.append(person)
-          print("You add all person successfully")
+#           person['job']=job
+#           allperson.append(person)
+#           print("You add all person successfully")
        
-     elif choice=='2':
-         counter=1
-         print('----'*20)
-         print('all person :')
-         for i in allperson:
-              print('person',counter)
-         for key in i:     
-              print("---",key,i[key])
-              counter+=1
+#      elif choice=='2':
+#          counter=1
+#          print('----'*20)
+#          print('all person :')
+#          for i in allperson:
+#               print('person',counter)
+#          for key in i:     
+#               print("---",key,i[key])
+#               counter+=1
               
+list=[1,2,3,4,5,6,5,7,8,9]
+list.pop(5)
+print(list)
+list.reverse()
+print(list)
+list.remove(5)
+print(list)
+list.count(1)
+print(list.count(6))
+
+
+
 
      
      
